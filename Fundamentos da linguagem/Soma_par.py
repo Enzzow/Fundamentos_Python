@@ -1,6 +1,6 @@
 tam = int(input(" Informe o tamanho da lista: ")) 
 
-while (tam<=0 and tam>10): #Eu sei que não precisa usar o parênteses mas eu gosto kkkk
+while (tam<=0 and tam>10): 
     tam = int(input(" Informe o tamanho da lista: "))
 
 lista = []
