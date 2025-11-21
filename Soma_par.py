@@ -6,7 +6,7 @@ while (tam<=0 and tam>10):
 lista = []
 
 for i in range(0,tam):
-    num = int(input(f" Digite o {i+1}º da lista: "))
+    num = int(input(f" Digite o {i+1}º número da lista: "))
     lista.append(num)
 
 soma = 0
