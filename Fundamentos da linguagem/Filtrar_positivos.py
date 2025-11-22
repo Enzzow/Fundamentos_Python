@@ -7,7 +7,13 @@ def num_positivos(list):
 
     return list2
 
-lista = [1,2,3,-4,5]
+tam = int(input(" Informe o tamanho da lista: "))
+lista = []
+
+for i in range(tam):
+    num = int(input(f" Informe o {i+1}º número da lista: ")
+    lista.append(num)
+
 print(f" Lista original: {lista}")
 
 lista2 = num_positivos(lista)
