@@ -1,9 +1,9 @@
 def retornar_maior(lista):
-    maior = 0
+    maior = lista[0]
 
-    for i in range(len(lista)):
-        if maior<lista[i]:
-            maior = lista[i]
+    for i in range(len(lista-1)):
+        if maior<lista[i+1]:
+            maior = lista[i+1]
     
     return maior
 
