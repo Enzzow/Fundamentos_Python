@@ -5,7 +5,7 @@ armario = {
     "Açúcar":1
 }
 
-alimento = input(" Informe o alimento que deseja: ").title()
+alimento = input("\n Informe o alimento que deseja: ").title()
 
 if alimento in armario:
     print(f" Possuí {armario[alimento]} em estoque\n")
