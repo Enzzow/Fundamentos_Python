@@ -7,6 +7,7 @@ frutas = {
 }
 
 print(f"\nEstoque de frutas original:\n")
+
 print(frutas)
 
 valor = frutas.pop("Arroz")# Obtém o valor do Arroz
