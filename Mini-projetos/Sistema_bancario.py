@@ -1,9 +1,9 @@
 def menu():
     print(" \n   #====Menu====#\n")
-    print("   [1] Depositar ") #d
-    print("   [2] Extrato   ") #e
-    print("   [3] Saque     ") #s
-    print("   [4] Sair      ") #q
+    print("   [1] Depositar ") 
+    print("   [2] Extrato   ") 
+    print("   [3] Saque     ") 
+    print("   [4] Sair      ") 
 
 menu()
 opcao = int(input(" \n Selecione uma das opções do menu acima: "))
@@ -27,9 +27,6 @@ while continua:
             
           print(f" \n #Seu saldo atual é de R${saldo:.2f}#\n")
           
-          menu()
-          opcao = int(input(" \n Digite uma das opções do menu acima: "))
-          
         elif opcao == 1:
             
           print(" \n #OBS: Limite de deposito é de R$ 50.000,00#\n ")    
@@ -43,9 +40,6 @@ while continua:
           saldo+=valor
           print(" \n #Depósito realizado com sucesso!#\n")
           
-          menu()
-          opcao = int(input(" \n Digite uma das opções do menu acima: "))
-          
         elif opcao == 3:
             if saldo == 0.0:
              print(" \n #Você não possuí saldo!#\n")
@@ -58,5 +52,5 @@ while continua:
                  saldo-=valor_saque
                  print(" \n #Saque realizado com sucesso!# \n")
               
-            menu()
-            opcao = int(input(" \n Digite uma das opções do menu acima: "))
+        menu()
+        opcao = int(input(" \n Digite uma das opções do menu acima: "))
