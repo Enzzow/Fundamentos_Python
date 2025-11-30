@@ -13,20 +13,22 @@ saldo = 0.00
 
 while continua:
     
-    while opcao != 1 and opcao != 2 and opcao != 3 and opcao != 4:
+    while opcao not in [1,2,3,4]:
         
         print(" \n  Opção inválida!\n")
         opcao = int(input(" \n Digite uma das opções do menu acima: "))
-        
+
+    #Encerra o sistema
     if opcao == 4:
       continua = False
       print(" \n Fim da sessão! :D")
     else:
-        
+        #Extrato
         if opcao == 2:
             
           print(f" \n #Seu saldo atual é de R${saldo:.2f}#\n")
-          
+
+        #Depósito
         elif opcao == 1:
             
           print(" \n #OBS: Limite de deposito é de R$ 50.000,00#\n ")    
@@ -39,14 +41,15 @@ while continua:
             
           saldo+=valor
           print(" \n #Depósito realizado com sucesso!#\n")
-          
+
+        #Saque
         elif opcao == 3:
             if saldo == 0.0:
              print(" \n #Você não possuí saldo!#\n")
             else:
              valor_saque = float(input(" \n Informe o valor que deseja retirar: R$ "))
              
-             if valor_saque>saldo or valor_saque<0.0:
+             if valor_saque>saldo or valor_saque<=0.0:
                  print(" \n #Saque inválido!#\n")
              else:
                  saldo-=valor_saque
